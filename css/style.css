@@ -289,7 +289,7 @@ li {
 }
 
 .hero h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .intro {
@@ -364,12 +364,7 @@ li {
 
 .herocontent {
     margin: 0 7rem;
-    margin-top: 6rem;
-}
-
-.herocontent p {
-    margin-bottom: 3.5rem;
-    width: 550px;
+    margin-top: 5rem;
 }
 
 #explore {
@@ -437,7 +432,7 @@ li {
 /* MINIWORK SECTION */
 .miniWork {
     margin: 0 7rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -662,7 +657,7 @@ article.experience {
 
 .contactText {
     grid-area: cText;
-    margin: 0 2rem 0 7rem;
+    margin: 0 3rem 0 7rem;
 }
 
 .contactForm {
