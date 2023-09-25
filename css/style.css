@@ -24,7 +24,6 @@ a {
     border-radius: 2rem;
     cursor: pointer;
     transition: background-color 200ms linear;
-    margin: 0.25rem;
 }
 
 .primary a {
@@ -33,8 +32,8 @@ a {
 
 .primary:hover {
     background-color: white;
-    border: #F3D4D2 solid 0.2rem;
-    padding: 0.8rem 2rem;
+    border: #F3D4D2 solid 0.22rem;
+    padding: 0.78rem 1.98rem;
 }
 
 .primary:hover a {
@@ -55,7 +54,6 @@ a {
     border: none;
     outline: none;
     position: relative;
-    margin: 0.25rem;
     border-radius: 2rem;
     background: linear-gradient(to right, #F3D4D2, #A4BAE1);
     cursor: pointer;
@@ -188,6 +186,7 @@ li {
     font-family: 'Work Sans', 'Calibri', sans-serif;
     line-height: 1.3rem !important;
     color: #333;
+    margin: 0;
 }
 
 .lg {
@@ -205,7 +204,7 @@ li {
 #backToTop {
     display: none;
     position: fixed;
-    bottom: 4rem;
+    bottom: 3rem;
     right: 5rem;
     z-index: 99;
     border: none;
@@ -249,7 +248,7 @@ li {
 
 #logo {
     font-size: 1.5rem !important;
-    font-family: 'Hussar Ekologiczny Filled', sans-serif;
+    font-family: 'Hussar Ekologiczny Outline', sans-serif;
     font-weight: bold;
     background: -webkit-linear-gradient(left, #F3D4D2, #A4BAE1);
     background-clip: text;
@@ -449,7 +448,7 @@ li {
 /* https://codepen.io/chriscoyier/pen/XodmyY?editors=1100 */
 .rightBorder {
     border-right: 1px solid #dddddd;
-    border-image: linear-gradient(to bottom, rgba(136, 136, 136, 0), rgba(136, 136, 136, 1), rgba(136, 136, 136, 0)) 1 10%;
+    border-image: linear-gradient(to bottom, rgba(184, 184, 184, 0), rgb(184, 184, 184), rgba(184, 184, 184, 0)) 1 10%;
 }
 
 .info ul {
@@ -530,7 +529,7 @@ li {
     background-color: #F9F9F9;
     box-shadow: 4px 4px 10px 0px rgba(177, 177, 177, 0.25);
     width: 100%;
-    height: 25rem;
+    height: 27rem;
     border-radius: 1rem;
 }
 
@@ -624,12 +623,28 @@ button .primary {
     margin-bottom: 6rem;
 }
 
+#resumeHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+#nameTitle h2 {
+    margin: 0;
+}
+
+#nameTitle h3, .work ul, .resumeInfo ul {
+    margin-top: 0.5rem;
+}
+
 .resumeContent {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
         "left right"
     ;
+    margin-bottom: 3rem;
 }
 
 aside.resumeInfo {
@@ -644,6 +659,10 @@ article.experience {
 .workInfo {
     display: flex;
     justify-content: space-between;
+}
+
+.resumeInfo h3, .experience h3 {
+    margin-bottom: 0.5rem;
 }
 /* ------------------------------ */
 /* CONTACT */
@@ -692,6 +711,8 @@ form button {
 /* FOOTER */
 .flexFooter {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .flexFooter a {
@@ -709,14 +730,9 @@ form button {
 
 .flexFootItem {
     margin: 0 0 0 7rem;
-    padding: 0.5rem 0;
+    padding: 1.25rem 0;
 }
 
 .flexFootItem h3 {
-    margin-bottom: 0;
-
-}
-
-.flexFootItem p {
-    margin-top: 0;
+    margin: 0;
 }
