@@ -24,6 +24,7 @@ a {
     border-radius: 2rem;
     cursor: pointer;
     transition: background-color 200ms linear;
+    margin-right: 0.5rem;
 }
 
 .primary a {
@@ -71,6 +72,7 @@ a {
     border-radius: 29px;
     z-index: -1;
     transition: 0.4s;
+    
 }
 
 .secondary:hover::before {
@@ -664,6 +666,12 @@ article.experience {
 .resumeInfo h3, .experience h3 {
     margin-bottom: 0.5rem;
 }
+
+#btmBtn {
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
 /* ------------------------------ */
 /* CONTACT */
 .contact {
