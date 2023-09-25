@@ -570,9 +570,17 @@ li {
 }
 /* ------------------------------ */
 /* ABOUT ME PAGE */
-#selfPortrait {
-    margin: 0 7rem;
-    margin-top: 3rem;
+#aboutMain {
+    margin-bottom: 6rem;
+}
+
+.about h2 {
+    margin: 0;
+}
+
+.about p {
+    margin:0;
+    margin-bottom: 4rem;
 }
 
 .aboutContent {
@@ -589,22 +597,6 @@ li {
     grid-area: about;
 }
 
-/* .about h2 {
-    margin-bottom: -1rem !important;
-} */
-
-.about p {
-    margin-bottom: 5rem;
-}
-
-.about div {
-    margin-bottom: 11.25rem;
-}
-
-div button {
-    margin-right: 1rem;
-}
-
 .kellyGif {
     margin: 0 5rem;
     grid-area: gif;
@@ -618,6 +610,16 @@ div button {
     width: 100%;
 }
 
+.about p a {
+    text-decoration: underline;
+}
+
+button .primary {
+    color: #A4BAE1;
+}
+
+/* ------------------------------ */
+/* RESUME PAGE */
 .resumeContent {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -639,7 +641,6 @@ article.experience {
     display: flex;
     justify-content: space-between;
 }
-
 /* ------------------------------ */
 /* CONTACT */
 .contact {
