@@ -598,11 +598,11 @@ li {
 }
 
 .kellyGif {
-    margin: 0 5rem;
+    margin: 0 3rem 0 7rem;
     grid-area: gif;
     background-color: white;
     padding: 1.25rem 1.25rem 4rem 1.25rem;
-    box-shadow: 0 0.25rem 0.5rem 0 rgba(136, 136, 136, 0.2);
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(136, 136, 136, 0.4);
     transform: rotate(8deg);
 }
 
@@ -620,11 +620,15 @@ button .primary {
 
 /* ------------------------------ */
 /* RESUME PAGE */
+#resumeMain {
+    margin-bottom: 6rem;
+}
+
 .resumeContent {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
-        "left right right"
+        "left right"
     ;
 }
 
