@@ -72,7 +72,7 @@ a {
     border-radius: 29px;
     z-index: -1;
     transition: 0.4s;
-    
+
 }
 
 .secondary:hover::before {
@@ -287,6 +287,30 @@ li {
     padding: 0.3rem;
 }
 
+.menuIcon {
+    display: none;
+    position: relative;
+    z-index: 10000;
+}
+
+.hamburgerMenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.mobileFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
 /* ------------------------------ */
 /* HERO SECTION */
 .hero h1 {
@@ -313,6 +337,10 @@ li {
     filter: drop-shadow(0px 0px 10px rgba(177, 177, 177, 0.3));
 }
 
+.squiggle {
+    padding-right: 0.5rem;
+}
+
 .introGif img {
     width: 7rem;
     height: 7rem;
@@ -320,7 +348,7 @@ li {
 }
 
 .introArrow {
-    padding-right: 0.5rem;
+    padding: 0 0.5rem;
 }
 
 .introArrow:hover {
@@ -440,11 +468,16 @@ li {
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr;
+    grid-template-areas:
+        "infoBlock infoBlock infoBlock" */
+    ;
 }
 
 .info {
     display: inline-block;
     padding: 0 2rem;
+    /* grid-area: infoBlock; */
 }
 
 /* https://codepen.io/chriscoyier/pen/XodmyY?editors=1100 */
@@ -569,6 +602,7 @@ li {
     transition: all 1s;
     opacity: 1;
 }
+
 /* ------------------------------ */
 /* ABOUT ME PAGE */
 #aboutMain {
@@ -580,7 +614,7 @@ li {
 }
 
 .about p {
-    margin:0;
+    margin: 0;
     margin-bottom: 4rem;
 }
 
@@ -636,7 +670,9 @@ button .primary {
     margin: 0;
 }
 
-#nameTitle h3, .work ul, .resumeInfo ul {
+#nameTitle h3,
+.work ul,
+.resumeInfo ul {
     margin-top: 0.5rem;
 }
 
@@ -663,7 +699,8 @@ article.experience {
     justify-content: space-between;
 }
 
-.resumeInfo h3, .experience h3 {
+.resumeInfo h3,
+.experience h3 {
     margin-bottom: 0.5rem;
 }
 
@@ -715,6 +752,7 @@ label {
 form button {
     color: #333;
 }
+
 /* ------------------------------ */
 /* FOOTER */
 .flexFooter {
@@ -743,4 +781,95 @@ form button {
 
 .flexFootItem h3 {
     margin: 0;
+}
+
+/* ------------------------------ */
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1200px) {
+    .navlink {
+        margin-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .miniWork {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "infoBlock"
+            "infoBlock"
+            "infoBlock"
+        ;
+        margin: 0 2rem;
+    }
+
+    .rightBorder {
+        border-bottom: 1px solid #dddddd;
+        border-image: linear-gradient(to right, rgba(184, 184, 184, 0), rgb(184, 184, 184), rgba(184, 184, 184, 0)) 1 10%;
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "wcontent"
+        ;
+        margin-bottom: 3rem;
+    }
+
+    .tags {
+        margin: 0.5rem 0;
+    }
+
+    .desc {
+        margin-bottom: 1.5rem;
+    }
+
+    .workImage {
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem !important;
+    }
+
+    h2 {
+        font-size: 1.25rem !important;
+    }
+
+    h3 {
+        font-size: 1rem !important;
+    }
+
+    .flexNav {
+        padding: 1rem 2rem;
+    }
+
+    .herocontent {
+        margin: 2rem;
+    }
+
+    #explore {
+        display: none;
+    }
+
+    main {
+        margin: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        font-size: 1.25rem !important;
+    }
 }
