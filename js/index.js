@@ -20,15 +20,13 @@ function backToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// function myFunction() {
-//   var x = document.getElementById("myLinks");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
-
 $(".menuIcon").on("click", function(){
+  if($(".menuIcon").hasClass("rotate")) {
+    $(".menuIcon").removeClass("rotate");
+    $(".menuIcon").css("transition", "all 1s ease-in-out");
+  } else {
+    $(".menuIcon").addClass("rotate");
+  }
+  // $(".menuIcon").css("transform","rotate(45deg)");
     $(".hamburgerMenu").slideToggle();
 });

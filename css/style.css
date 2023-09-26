@@ -290,6 +290,7 @@ li {
 .menuIcon {
     display: none;
     position: relative;
+    opacity: 0.9;
     z-index: 10000;
 }
 
@@ -803,6 +804,11 @@ form button {
 
     .menuIcon {
         display: block;
+    }
+
+    .rotate {
+        transform: rotate(360deg);
+        transition: all 1s ease-in-out;
     }
 
     .miniWork {
