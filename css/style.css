@@ -391,8 +391,8 @@ li {
     margin-bottom: 2rem;
     background-image: url("../images/the\ grid\ aesthetic.png");
     background-repeat: repeat;
-    /* padding-bottom: 4rem; */
-    height: calc(100vh - 8rem);
+    padding-bottom: 3rem;
+    /* height: calc(100vh - 8rem); */
 }
 
 .herocontent {
@@ -792,6 +792,11 @@ form button {
 }
 
 @media only screen and (max-width: 1024px) {
+    #backToTop {
+        right: 2rem;
+        bottom: 2rem;
+    }
+    
     nav {
         display: none;
     }
@@ -836,6 +841,41 @@ form button {
     .workImage {
         height: 20rem;
     }
+
+    .contact {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "cText"
+            "cForm"
+        ;
+        padding-top: 4rem;
+    }
+
+    .contactText {
+        margin: 0 7rem;
+    }
+
+    .contactForm {
+        margin: 2rem 7rem;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    /* .flexFooter {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
+
+    .flexFootItem {
+        margin-left: 2rem;
+    }
+
+    #centerFooter {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -865,6 +905,18 @@ form button {
 
     main {
         margin: 0 2rem;
+    }
+
+    .contactText {
+        margin: 2rem;
+    }
+
+    .contactForm {
+        margin: 2rem;
+    }
+
+    input, textarea {
+        width: 100%;
     }
 }
 
