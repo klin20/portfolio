@@ -9,13 +9,32 @@
     <!-- Google Fonts - Work Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Google Fonts - Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Work | Kelly Lin Design Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+    .draggable { width: 90px; height: 90px; padding: 0.5em; float: left; margin: 0 10px 10px 0; margin-bottom:20px }
+    #containment-wrapper { width: 95%; height:300px; padding: 10px; }
+    h3 { clear: left; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#draggable3" ).draggable({ containment: "#containment-wrapper", scroll: false });
+    } );
+    </script> -->
 </head>
 
 <body>
@@ -43,10 +62,14 @@
             </div>
         </nav>
         <!-- MOBILE NAVIGATION -->
-        <img class="menuIcon" src="images/pinwheel.svg">
+        <div id="mobileMenu">
+            <img class="menuIcon" src="images/pinwheel.svg">
+            <p class="sm">Menu</p>
+        </div>
         <div class="hamburgerMenu">
             <div class="mobileFlex">
-                <a href="index.html" class="navlink"><sup class="navlinkvalue">01</sup><span class="active">Work</span></a>
+                <a href="index.html" class="navlink"><sup class="navlinkvalue">01</sup><span
+                        class="active">Work</span></a>
                 <a href="playground.html" class="navlink"><sup class="navlinkvalue">02</sup><span>Playground</span></a>
                 <a href="aboutme.html" class="navlink"><sup class="navlinkvalue">03</sup><span>About
                         Me</span></a>
@@ -56,6 +79,12 @@
 
     </header>
 
+    <!-- <div id="containment-wrapper">
+      <div id="draggable3" class="draggable ui-widget-content">
+        <p>I&apos;m contained within the box</p>
+      </div>
+    </div> -->
+
     <!-- hero section -->
     <section class="hero">
         <div class="herocontent">
@@ -63,22 +92,26 @@
                 <div class="introGif">
                     <img src="images/introGif.gif">
                 </div>
-                <h1>Hi, Hey, Howdy !!</h1>
+                <h1>I’m Kelly, nice to meet you ツ</h1>
                 <!-- <span><img src="images/arrow-cursor-2.svg" alt="arrow pointing northeast" class="introArrow"></span> -->
             </div>
-            <h2><span><img class="squiggle" src="images/pen-draw.svg"></span>I’m
-                a self-taught, Chinese-American designer based in the Chicago area. Using UX design and my background in
-                computer science, I create
-                with intention to build delightful experiences. I'm passionate about social good and bringing
-                communities together to tell their stories.</h2>
-            <!-- <a class="primary lg" href="https://www.linkedin.com/in/klin18/" target="_blank">Connect With Me</a> -->
-            <button class="primary">
-                <a class="lg" href="https://www.linkedin.com/in/klin18/" target="_blank">Connect With Me</a>
-            </button>
-            <!-- <a class="secondary lg" href="#" target="_blank">View Resume</a> -->
-            <button class="secondary">
-                <a href="#" class="lg">View Resume</a>
-            </button>
+            <!-- <span><img class="squiggle" src="images/pen-draw.svg"></span> -->
+            <p>I’m a self-taught, Chinese-American, multi-disciplinary designer with
+                experience working on social good products and supporting marginalized communities. As an empathetic
+                pixel-pusher and coding whiz, I create holistic experiences to connect and tell the stories of everyday
+                people while solving problems for humans, not just users.</p>
+            <div id="heroButtons">
+                <a href="#">
+                    <button class="primary button">
+                        View resume
+                    </button>
+                </a>
+                <a href="aboutme.html">
+                    <button class="secondary button">
+                        Learn my story
+                    </button>
+                </a>
+            </div>
         </div>
 
         <div id="explore">
@@ -87,32 +120,37 @@
         </div>
     </section>
 
-    <section class="miniWork">
-        <div class="info rightBorder">
-            <h3>Currently</h3>
+    </canvas>
+    <section id="miniWork">
+        <div class="info1 rightBorder">
+            <h4>Currently</h4>
             <ul>
                 <li>Teaching UX/UI Design <a
                         href="https://www.edx.org/boot-camps/ux-ui-user-experience/northwestern-university-school-of-professional-studies-ux-ui-boot-camp?webview=false&campaign=UX%2FUI+Boot+Camp&source=edx&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Fschool%2Fnorthwestern"
                         target="_blank">@Northwestern University through edX↗</a></li>
-                <li>Improving the website experience <a href="https://dearasianyouth.org/" target="_blank">@Dear Asian
+                <li>Improving the website experience <a href="https://dearasianyouth.org/" target="_blank">@Dear
+                        Asian
                         Youth↗</a></li>
             </ul>
         </div>
-        <div class="info rightBorder">
-            <h3>Previously</h3>
+        <div class="info2 rightBorder">
+            <h4>Previously</h4>
             <ul>
+                <li>Innovating AI technology to improve outcomes for families with disabilities <a
+                        href="https://www.linkedin.com/company/the-inclusive-group/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BQfBL93keR2WjSMhLXuomyA%3D%3D"
+                        target="_blank">@The Inclusive Group↗</a></li>
                 <li>Designing B2B2C AI technology to bring community back into fitness <a
                         href="https://www.motivateu.net/individuals.html" target="_blank">@MotivateU↗</a></li>
                 <li>Managing social emotional intelligence products <a href="https://learn2strut.com/eq360/"
                         target="_blank">@STRUT Learning↗</a></li>
             </ul>
         </div>
-        <div class="info">
-            <h3>Upcoming</h3>
+        <div class="info3">
+            <h4>On the side</h4>
             <ul>
                 <li>Collaborating <a href="https://panethnicpourovers.org/tech-academy-program/"
                         target="_blank">@Panethnic Pourovers Tech Academy↗</a></li>
-                <li>Shadowing non-profit work <a href="https://techfleet.org/" target="_blank">@Tech Fleet↗</a></li>
+                <li>Resume and portfolio reviews for new designers entering the field</li>
             </ul>
         </div>
     </section>
@@ -127,54 +165,63 @@
             <article class="workGrid">
                 <div class="workContent">
                     <div class="tags">
-                        <p class="pill">Research</p>
-                        <p class="pill">Responsive Design</p>
-                        <p class="pill">Code & Development</p>
+                        <p class="pill sm">SaaS</p>
+                        <p class="pill sm">Accessibility</p>
+                        <p class="pill sm">Web Design</p>
+                        <p class="pill sm">Strategy</p>
                     </div>
-                    <h3 class="pHead">Keeping the culture alive and strengthening familial bonds through language
+                    <h3 class="pHead">Connecting the building blocks to accessible care for families with disabilities
                     </h3>
-                    <p class="desc"><em>"Cantonese is a dying language"</em> says the interviewee but is this really
-                        true? A look into the history of the Cantonese language, where it stands today, and how to teach
-                        future generations the language.</p>
-                    <button class="secondary">
-                        <a href="#" class="lg">View Case Study</a>
-                    </button>
+                    <p class="desc">Foraging a new path in healthcare to ensure accessibility for all in order for
+                        children with disabilities to live their best life.<br><br><em class="gray">project under
+                            NDA</em></p>
+                    <a href="inclusive.html" target="_blank"><button class="secondary button">
+                            Explore project
+                        </button></a>
                 </div>
-                <div class="workImage">
-                </div>
+                <a href="inclusive.html" class="workImage">
+                    <div>
+                        <img src="images/Frame 18388.png">
+                    </div>
+                </a>
             </article>
             <article class="workGrid">
                 <div class="workContent">
                     <div class="tags">
-                        <p class="pill">Augmented Reality</p>
-                        <p class="pill">Mobile Design</p>
-                        <p class="pill">No-code Development</p>
+                        <p class="pill sm">SaaS</p>
+                        <p class="pill sm">Health & Wellness</p>
+                        <p class="pill sm">UI Design</p>
+                        <p class="pill sm">Responsive Web Design</p>
                     </div>
-                    <h3 class="pHead">Utilizing Augmented reality to create a better art museum experience</h3>
-                    <p class="desc">How might we engage visitors in learning more about the art pieces and appreciate
-                        the art to its full potential?</p>
-                    <button class="secondary">
-                        <a href="#" class="lg">View Case Study</a>
-                    </button>
+                    <h3 class="pHead">Reinvigorating community fitness with human interaction</h3>
+                    <p class="desc">Bringing the community back into community based fitness<br><br><em
+                            class="gray">password protected</em></p>
+                    <a href="#" target="_blank"><button class="secondary button">
+                            Explore project
+                        </button></a>
                 </div>
-                <div class="workImage">
-                </div>
+                <a href="#" class="workImage">
+                    <div>
+                        <img src="images/Frame 18388.png">
+                    </div>
+                </a>
             </article>
             <article class="workGrid">
                 <div class="workContent">
                     <div class="tags">
-                        <p class="pill">Research</p>
-                        <p class="pill">UX Design
-                        <p class="pill">Web Design</p>
+                        <p class="pill sm">Productivity</p>
+                        <p class="pill sm">UX Design
+                        <p class="pill sm">Web Design</p>
+                        <p class="pill sm">Conceptual</p>
                     </div>
-                    <h3 class="pHead">Web app for busy students to BuilD Better Habits and Boost Productivity</h3>
+                    <h3 class="pHead">Building better habits and boosting productivity for busy students</h3>
                     <p class="desc">How might we innovate on current productivity services so that students are
                         motivated and satisfied with how they’re managing everything on their plate?
 
                     </p>
-                    <button class="secondary">
-                        <a href="#" class="lg">View Case Study</a>
-                    </button>
+                    <a href="#" target="_blank"><button class="secondary button">
+                            Explore project
+                        </button></a>
                 </div>
                 <div class="workImage">
                 </div>
@@ -184,34 +231,23 @@
 
     <!-- contact -->
     <section class="contact">
-        <div class="contactText">
+        <div class="contactInfo">
             <div>
-                <h2>Contact Me</h2>
-                <p>Let's talk! Whether it be about design opportunities, video games, music you like, books you're
-                    reading,
-                    tv shows you're watching, I'm your gal :~)</p>
+                <h2>How does virtual coffee sound? ツ</h2>
+                <p>Let's talk! Whether it be about design opportunities, an invitation to collaborate, or silly
+                    conversation, I'm happy to get in touch.</p>
+            </div>
+            <div id="contactButtons">
+                <a href="mailto:kjxlin88@gmail.com"><img src="images/email button.svg"></a>
+                <a href="https://www.linkedin.com/in/klin18/" target="_blank"><img src="images/linkedin button.svg"></a>
             </div>
         </div>
-        <form class="contactForm" id="messageForm">
-            <label class="lg" for="name">NAME</label><br>
-            <input type="text" id="name" name="name" placeholder="Ex: Tom Nook"><br><br>
-            <label class="lg" for="email">EMAIL</label><br>
-            <input type="email" id="email" name="email" placeholder="Ex: tomnook@acnh.com" required><br><br>
-            <label class="lg" for="message">YOUR MESSAGE</label><br>
-            <textarea name="message" id="message" cols="60" rows="10"
-                placeholder="Ex: I am once again asking for your bells."></textarea>
-            <button type="submit" form="messageForm" value="Submit" class="secondary lg">Send Message</button>
-        </form>
     </section>
 
     <!-- footer section -->
     <footer class="flexFooter">
-        <div class="flexFootItem">
-            <h3>Thanks for stopping by!</h3>
-            <p><a href="https://www.linkedin.com/in/klin18/" target="_blank">LinkedIn↗</a><span class="gray"> /
-                </span><a href="resume.html">Resume↗</a></p>
-        </div>
-        <p id="centerFooter" class="gray">Designed by Kelly Lin © 2023</p>
+        <p class="gray"><em>This site is open 24 hours a day, 7 days a week.<br>Thanks for stopping by.</em></p>
+        <p class="gray">Design & coded by Kelly Lin | Updated 02.20.2024</p>
     </footer>
     <script src="js/index.js"></script>
 </body>
