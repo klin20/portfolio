@@ -11,11 +11,11 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     $('.flexNav').css({'background-color':"white", "box-shadow":"0 0.25rem 0.5rem -0.5rem #333333"});
     mybutton.style.display = "block";
-    mybutton2.style.display = "none";
+    // mybutton2.style.display = "none";
   } else {
     $('.flexNav').css({'background-color':"rgba(255, 255, 255, 0.5)","box-shadow":"none"});
     mybutton.style.display = "none";
-    mybutton2.style.display = "flex";
+    // mybutton2.style.display = "flex";
   }
 }
 
