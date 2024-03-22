@@ -81,9 +81,17 @@ a {
 }
 
 /* SUBPAGE HEADERS */
-.line {
+/* .line {
     height: 0.5px;
     flex-grow: 1;
+    background-color: #DDDDDD;
+} */
+
+hr {
+    color: #DDDDDD;
+    flex-grow: 1;
+    height: 0.5px;
+    border-width: 0;
     background-color: #DDDDDD;
 }
 
@@ -593,13 +601,13 @@ nav {
 }
 
 .playground {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     overflow: hidden;
-    margin-bottom: 6rem;
+    margin-bottom: 6rem; */
 }
 
 /* .playgroundContent {
@@ -809,7 +817,7 @@ article.experience {
     max-width: 26rem;
 }
 
-.prjFlexHead .line {
+.prjFlexHead hr {
     margin-top: 0.875rem;
 }
 
